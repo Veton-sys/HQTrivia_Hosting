@@ -1,0 +1,13 @@
+﻿C:\Projects\HQTrivia\server\HQTrivia.Data\Data\ApplicationDbContext.cs
+C:\Projects\HQTrivia\server\HQTrivia.Data\Migrations\20230118084954_update to 2023.cs
+C:\Projects\HQTrivia\server\HQTrivia.Data\Migrations\20230118084954_update to 2023.Designer.cs
+C:\Projects\HQTrivia\server\HQTrivia.Data\Migrations\ApplicationDbContextModelSnapshot.cs
+C:\Projects\HQTrivia\server\HQTrivia.Data\Repository\AnswerRepository.cs
+C:\Projects\HQTrivia\server\HQTrivia.Data\Repository\IRepository\IAnswerRepository.cs
+C:\Projects\HQTrivia\server\HQTrivia.Data\Repository\IRepository\IQuestionRepository.cs
+C:\Projects\HQTrivia\server\HQTrivia.Data\Repository\IRepository\IQuizRepository.cs
+C:\Projects\HQTrivia\server\HQTrivia.Data\Repository\IRepository\IUserRepository.cs
+C:\Projects\HQTrivia\server\HQTrivia.Data\Repository\QuestionRepository.cs
+C:\Projects\HQTrivia\server\HQTrivia.Data\Repository\QuizRepository.cs
+C:\Projects\HQTrivia\server\HQTrivia.Data\Repository\UserRepository.cs
+C:\Projects\HQTrivia\server\HQTrivia.Data\Properties\launchSettings.json

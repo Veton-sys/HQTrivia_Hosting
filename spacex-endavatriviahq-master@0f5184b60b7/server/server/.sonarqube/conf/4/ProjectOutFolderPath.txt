@@ -1,0 +1,1 @@
+C:\Projects\HQTrivia\server\.sonarqube\out\4

@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer base {
+    /* :root { */
+        /* NOT WORKING>>> */
+      /* --color-header-primary: #233237; */
+      /* --color-primary: 255 115 179; */
+      /* --color-secondary: 111 114 185; */
+    /* } */
+}
+
+.button {
+    @apply border rounded-md min-w-[140px] md:min-w-[270px] min-h-[50px] bg-[#DE411B] text-white uppercase font-semibold transition duration-150 active:scale-105 ease-in-out 
+}
+.btn {
+    @apply border rounded-md min-w-[200px] md:min-w-[270px] min-h-[50px] text-white uppercase font-semibold transition duration-150 active:scale-105 ease-in-out 
+}
+.newBtn{
+    @apply border rounded-md min-w-[200px] md:min-w-[270px] min-h-[50px] text-white uppercase font-semibold  
+}
+.paragraph {
+    @apply text-xs font-sans font-normal text-[#233237]
+}
+.input__primary{
+    @apply bg-transparent outline-none flex-grow text-lg text-[#233237] bg-white flex rounded px-5 py-3
+}

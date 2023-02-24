@@ -1,0 +1,58 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32825.248
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HQTrivia", "HQTrivia\HQTrivia.csproj", "{985A0511-84B7-4DC3-8ACA-BDD1E6431A9E}"
+	ProjectSection(ProjectDependencies) = postProject
+		{A8FB298D-D670-46F6-8010-232F075B7E55} = {A8FB298D-D670-46F6-8010-232F075B7E55}
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HQTrivia.Data", "HQTrivia.Data\HQTrivia.Data.csproj", "{A8FB298D-D670-46F6-8010-232F075B7E55}"
+	ProjectSection(ProjectDependencies) = postProject
+		{3B3E0141-86B5-465B-9007-60598F830EAF} = {3B3E0141-86B5-465B-9007-60598F830EAF}
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HQTrivia.Models", "HQTrivia.Models\HQTrivia.Models.csproj", "{3B3E0141-86B5-465B-9007-60598F830EAF}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SignalRClientTest", "SignalRClientTest\SignalRClientTest.csproj", "{A171A84B-812F-49D8-9077-3FD242772746}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HQTrivia.KafkaConsumer", "HQTrivia.KafkaConsumer\HQTrivia.KafkaConsumer.csproj", "{F228B389-24A0-4642-B7C0-E0C398FA5048}"
+	ProjectSection(ProjectDependencies) = postProject
+		{985A0511-84B7-4DC3-8ACA-BDD1E6431A9E} = {985A0511-84B7-4DC3-8ACA-BDD1E6431A9E}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{985A0511-84B7-4DC3-8ACA-BDD1E6431A9E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{985A0511-84B7-4DC3-8ACA-BDD1E6431A9E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{985A0511-84B7-4DC3-8ACA-BDD1E6431A9E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{985A0511-84B7-4DC3-8ACA-BDD1E6431A9E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A8FB298D-D670-46F6-8010-232F075B7E55}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A8FB298D-D670-46F6-8010-232F075B7E55}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A8FB298D-D670-46F6-8010-232F075B7E55}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A8FB298D-D670-46F6-8010-232F075B7E55}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3B3E0141-86B5-465B-9007-60598F830EAF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3B3E0141-86B5-465B-9007-60598F830EAF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3B3E0141-86B5-465B-9007-60598F830EAF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3B3E0141-86B5-465B-9007-60598F830EAF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A171A84B-812F-49D8-9077-3FD242772746}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A171A84B-812F-49D8-9077-3FD242772746}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A171A84B-812F-49D8-9077-3FD242772746}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A171A84B-812F-49D8-9077-3FD242772746}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F228B389-24A0-4642-B7C0-E0C398FA5048}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F228B389-24A0-4642-B7C0-E0C398FA5048}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F228B389-24A0-4642-B7C0-E0C398FA5048}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F228B389-24A0-4642-B7C0-E0C398FA5048}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F556E817-BA9E-4F26-85E3-7B246215E345}
+	EndGlobalSection
+EndGlobal

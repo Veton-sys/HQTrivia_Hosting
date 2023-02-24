@@ -1,0 +1,10 @@
+﻿C:\Projects\HQTrivia\server\HQTrivia.KafkaConsumer\Handlers\KafkaConsumerHandler.cs
+C:\Projects\HQTrivia\server\HQTrivia.KafkaConsumer\Program.cs
+C:\Projects\HQTrivia\server\HQTrivia.KafkaConsumer\obj\Debug\net6.0\HQTrivia.KafkaConsumer.GlobalUsings.g.cs
+C:\Projects\HQTrivia\server\HQTrivia.KafkaConsumer\obj\Debug\net6.0\.NETCoreApp,Version=v6.0.AssemblyAttributes.cs
+C:\Projects\HQTrivia\server\HQTrivia.KafkaConsumer\obj\Debug\net6.0\HQTrivia.KafkaConsumer.AssemblyInfo.cs
+C:\Projects\HQTrivia\server\HQTrivia.KafkaConsumer\obj\Debug\net6.0\HQTrivia.KafkaConsumer.MvcApplicationPartsAssemblyInfo.cs
+C:\Projects\HQTrivia\server\HQTrivia.KafkaConsumer\appsettings.Development.json
+C:\Projects\HQTrivia\server\HQTrivia.KafkaConsumer\appsettings.json
+C:\Projects\HQTrivia\server\HQTrivia.KafkaConsumer\libman.json
+C:\Projects\HQTrivia\server\HQTrivia.KafkaConsumer\Properties\launchSettings.json

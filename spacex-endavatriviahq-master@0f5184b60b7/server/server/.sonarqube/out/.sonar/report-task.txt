@@ -1,0 +1,6 @@
+projectKey=HQTrivia
+serverUrl=http://localhost:9000
+serverVersion=9.8.0.63668
+dashboardUrl=http://localhost:9000/dashboard?id=HQTrivia
+ceTaskId=AYXji4Le1sT82TEnXJ9d
+ceTaskUrl=http://localhost:9000/api/ce/task?id=AYXji4Le1sT82TEnXJ9d

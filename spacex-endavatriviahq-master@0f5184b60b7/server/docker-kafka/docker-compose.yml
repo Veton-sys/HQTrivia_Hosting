@@ -1,0 +1,75 @@
+version: '3.4'
+
+networks:
+  hqtrivia:
+
+services:
+  hqtriviadb:
+    container_name: hqtrivia-db
+    build:
+      context: .
+      dockerfile: Dockerfile-db
+    image: mcr.microsoft.com/mssql/server
+    ports:
+      - 1433:1433
+    environment:
+      - ACCEPT_EULA=Y
+      - SA_PASSWORD=password@12345%
+    networks:
+      - hqtrivia
+  zookeeper:
+    image: confluentinc/cp-zookeeper:latest
+    environment:
+      ZOOKEEPER_CLIENT_PORT: 2181
+      ZOOKEEPER_TICK_TIME: 2000
+    ports:
+      - 22181:2181
+  kafka:
+    image: confluentinc/cp-kafka:latest
+    depends_on:
+      - zookeeper
+    ports:
+      - 29092:29092
+    environment:
+      KAFKA_BROKER_ID: 1
+      KAFKA_ZOOKEEPER_CONNECT: zookeeper:2181
+      KAFKA_ADVERTISED_LISTENERS: PLAINTEXT://kafka:9092,PLAINTEXT_HOST://localhost:29092
+      KAFKA_LISTENER_SECURITY_PROTOCOL_MAP: PLAINTEXT:PLAINTEXT,PLAINTEXT_HOST:PLAINTEXT
+      KAFKA_INTER_BROKER_LISTENER_NAME: PLAINTEXT
+      KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: 1
+  hqtrivia-backend:
+    container_name: hqtrivia-app-backend
+    build:
+      context: .
+      dockerfile: Dockerfile-backend
+    depends_on:
+      - kafka
+      - zookeeper
+      - hqtriviadb
+    environment:
+      - BootstrapServers=kafka
+      - DB_HOST=hqtriviadb
+      - DB_NAME=hqtrivia
+      - DB_SA_PASSWORD=password@12345%
+    networks:
+      - hqtrivia
+    ports:
+      - 5000:5000
+  hqtrivia-frontend:
+    container_name: hqtrivia-app-frontend
+    build:
+      context: .
+      dockerfile: Dockerfile-frontend
+    depends_on:
+      - kafka
+      - zookeeper
+      - hqtriviadb
+    environment:
+      - BootstrapServers=kafka
+      - DB_HOST=hqtriviadb
+      - DB_NAME=hqtrivia
+      - DB_SA_PASSWORD=password@12345%
+    networks:
+      - hqtrivia
+    ports:
+      - 3000:3000
